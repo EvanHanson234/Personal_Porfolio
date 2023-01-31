@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" type="text/css" href="../Stylesheet.css">
+    <script>
+      function playGame(userChoice) {
+        var computerChoice = Math.floor(Math.random() * 3) + 1;
+        if (computerChoice === 1) {
+          computerChoice = "rock";
+        } else if (computerChoice === 2) {
+          computerChoice = "paper";
+        } else {
+          computerChoice = "scissors";
+        }
+        console.log("User: " + userChoice + ", Computer: " + computerChoice);
+        var result = "";
+        if (userChoice === computerChoice) {
+          result = "tie";
+        } else if (userChoice === "rock" && computerChoice === "scissors") {
+          result = "win";
+        } else if (userChoice === "paper" && computerChoice === "rock") {
+          result = "win";
+        } else if (userChoice === "scissors" && computerChoice === "paper") {
+          result = "win";
+        } else {
+          result = "lose";
+        }
+        console.log("Result: " + result);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Rock-Paper-Scissors Game</h1>
+    <p>
+      <button onclick="playGame('rock')">Rock</button>
+      <button onclick="playGame('paper')">Paper</button>
+      <button onclick="playGame('scissors')">Scissors</button>
+    </p>
+  </body>
+</html>
