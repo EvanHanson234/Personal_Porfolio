@@ -150,6 +150,16 @@ footer p {
   height: 20px;
 }
 
+.square-image {
+  width: 20px;
+  height: 150px;
+}
+
+.OS-image {
+  width: 20px;
+  height: 200px;
+}
+
 /*Text Box*/
 .box-container {
   display: flex;
@@ -165,7 +175,7 @@ footer p {
   border-radius: 10px;
 }
 
-/*Used for LinkedIn and GitHun links*/
+/*Used for LinkedIn and GitHub links*/
 .link-container {
   display: flex;
   justify-content: space-between;
@@ -191,6 +201,18 @@ footer p {
 
 .link:hover {
   color: #01579B;
+}
+
+/*Security+ Badge*/
+.badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
 }
 
 /*Horizontal Line Animation*/
