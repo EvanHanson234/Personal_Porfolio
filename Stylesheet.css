@@ -1,3 +1,6 @@
+/*Stylesheet for Evan Hanson's Portfolio*/
+
+/*General*/
 html {
   height: 100%;
   margin: 0;
@@ -11,129 +14,186 @@ body {
     height: 100%;
     margin: 0;
   }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 1em;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 2em;
-  }
 
-  .main-content {
-    min-height: 100%;
-    margin-bottom: -100px;
-    padding-bottom: 100px;
-  }
-  
-  section h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  
-  section p,
-  section ul {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 2em;
-  }
-  
-  section ul li {
-    margin-bottom: 1em;
-  }
-  
-  section form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #E0E0E0;
-    border-radius: 10px;
-  }
-  
-  section label,
-  section input[type="submit"] {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    width: 100%;
-  }
-  
-  section input[type="text"],
-  section input[type="email"],
-  section textarea {
-    border: 1px solid #333;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    width: 100%;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4em;
-    height: 100px;
-    line-height: 100px;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-
-  #profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
-  }  
-  
-  .box-container {
-    display: flex;
-    align-items: center;
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
 }
 
-  .box {
-    width: 70%;
-    height: auto;
-    background-color: #E0E0E0;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-  }
+.main-content {
+  min-height: 100%;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
   
-  .experience-image {
-    width: 20px;
-    height: 20px;
+/*Navigation*/
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+}
+
+/*Sections*/
+section h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+section p,
+section ul {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+section ul li {
+  margin-bottom: 1em;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+section label,
+section input[type="submit"] {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea {
+  border: 1px solid #333;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+/*Lists*/
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+/*Footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  height: 100px;
+  line-height: 100px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*Images*/
+#profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}  
+
+.experience-image {
+  width: 20px;
+  height: 20px;
+}
+
+/*Text Box*/
+.box-container {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 70%;
+  height: auto;
+  background-color: #E0E0E0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/*Used for LinkedIn and GitHun links*/
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.link-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.link {
+  color: #0277BD;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #01579B;
+}
+
+/*Horizontal Line Animation*/
+.animated-line {
+  width: 100%;
+  height: 1px;
+  background-color: #D3D3D3;
+  animation: animate-line 1.6s ease-in-out;
+}
+
+@keyframes animate-line {
+  from {
+    transform: scaleX(0);
   }
-
-
-  
+  to {
+    transform: scaleX(1);
+  }
+}
