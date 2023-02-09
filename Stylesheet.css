@@ -50,6 +50,34 @@ header nav a {
   color: #fff;
   text-decoration: none;
   padding: 1em;
+  position: relative
+}
+
+header nav a:before,
+header nav a:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 100%
+}
+
+header nav a:before {
+  left: 50%;
+  margin-left: -50%;
+}
+
+header nav a:after {
+  right: 50%;
+  margin-right: -50%;
+}
+
+header nav a:hover:before,
+header nav a:hover:after {
+  width: 100%;
 }
 
 /*Sections*/
@@ -136,14 +164,21 @@ footer p {
 }
 
 /*Images*/
-#profile-pic {
+.profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
   display: block;
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.5);
+  transition: all 1s ease;
 }  
+
+.profile-pic:hover{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
+  transform: translateY(10px);
+}
 
 .experience-image {
   width: 20px;
@@ -155,9 +190,9 @@ footer p {
   height: 150px;
 }
 
-.OS-image {
-  width: 20px;
-  height: 200px;
+/*Glare anomation for Profile picture*/
+.glare {
+
 }
 
 /*Text Box*/
@@ -191,16 +226,22 @@ footer p {
   width: 50px;
   height: 50px;
   margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
 }
+
+.link-icon:hover {
+  transform: rotate(360deg);
+  }
 
 .link {
   color: #0277BD;
   font-size: 20px;
   text-decoration: none;
+  transition: background-color 1s ease-in-out;
 }
 
 .link:hover {
-  color: #01579B;
+  color: #333;
 }
 
 /*Security+ Badge*/
